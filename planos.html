@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planos - Pro A.M.S Instrutor</title>
+
+<style>
+:root{
+--preto:#0d0d0d;
+--preto-sec:#1a1a1a;
+--laranja:#ff5a00;
+--laranja-hover:#ff7a26;
+--cinza:#bfbfbf;
+--branco:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:var(--preto);
+color:var(--branco);
+animation:fadeBody 0.8s ease-in;
+}
+
+@keyframes fadeBody{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+nav{
+background:var(--preto-sec);
+padding:15px;
+text-align:center;
+border-bottom:3px solid var(--laranja);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--laranja);
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+text-align:center;
+}
+
+h1{
+color:var(--laranja);
+margin-bottom:15px;
+animation:slideDown 0.8s ease;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-20px); opacity:0;}
+to{transform:translateY(0); opacity:1;}
+}
+
+.sub{
+color:var(--cinza);
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:var(--preto-sec);
+padding:30px;
+border-radius:12px;
+border:1px solid rgba(255,90,0,0.2);
+transition:all 0.4s ease;
+position:relative;
+opacity:0;
+transform:translateY(30px);
+animation:fadeUp 0.8s ease forwards;
+}
+
+.card:nth-child(1){animation-delay:0.1s;}
+.card:nth-child(2){animation-delay:0.2s;}
+.card:nth-child(3){animation-delay:0.3s;}
+.card:nth-child(4){animation-delay:0.4s;}
+.card:nth-child(5){animation-delay:0.5s;}
+.card:nth-child(6){animation-delay:0.6s;}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+border:1px solid var(--laranja);
+box-shadow:0 0 35px rgba(255,90,0,0.35);
+}
+
+.badge{
+background:var(--laranja);
+color:white;
+padding:5px 12px;
+font-size:0.75rem;
+border-radius:20px;
+position:absolute;
+top:15px;
+right:15px;
+font-weight:bold;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(255,90,0,0.6);}
+70%{box-shadow:0 0 0 10px rgba(255,90,0,0);}
+100%{box-shadow:0 0 0 0 rgba(255,90,0,0);}
+}
+
+.card h2{
+color:var(--laranja);
+margin-bottom:20px;
+}
+
+.lista{
+list-style:none;
+margin-bottom:25px;
+text-align:left;
+}
+
+.lista li{
+margin-bottom:10px;
+}
+
+.preco{
+font-size:1.8rem;
+font-weight:bold;
+margin-bottom:5px;
+}
+
+.preco-info{
+font-size:0.9rem;
+color:var(--cinza);
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:var(--laranja);
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:all 0.3s ease;
+}
+
+.btn:hover{
+background:var(--laranja-hover);
+transform:scale(1.05);
+}
+
+.obs{
+margin-top:60px;
+color:var(--cinza);
+font-size:0.95rem;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="faq.html">FAQ</a>
+<a href="planos.html">Planos</a>
+<a href="endereco.html">Endereço</a>
+</nav>
+
+<div class="container">
+
+<h1>Planos para Nova Habilitação</h1>
+<p class="sub">Escolha o plano ideal para sua necessidade</p>
+
+<div class="grid">
+
+<div class="card">
+<h2>Categoria A</h2>
+<ul class="lista">
+<li>✔ 2 aulas práticas de moto</li>
+<li>✔ Treino focado em exame</li>
+</ul>
+<div class="preco">R$ 99,99</div>
+<a href="https://wa.me/558994004352?text=Olá!%20Quero%20informações%20sobre%20o%20plano%20de%20aulas%20práticas%20–%20Categoria%20A%20da%20AMS." class="btn">Agendar pelo WhatsApp</a>
+</div>
+
+<div class="card">
+<h2>Categoria B</h2>
+<ul class="lista">
+<li>✔ 2 aulas práticas de carro</li>
+<li>✔ Treino de baliza e percurso</li>
+</ul>
+<div class="preco">R$ 199,99</div>
+<a href="https://wa.me/558994004352?text=Olá!%20Quero%20informações%20sobre%20o%20plano%20de%20aulas%20práticas%20–%20Categoria%20B%20da%20AMS." class="btn">Agendar pelo WhatsApp</a>
+</div>
+
+<div class="card">
+<h2>Plano Basic (AB)</h2>
+<ul class="lista">
+<li>✔ 2 aulas de moto</li>
+<li>✔ 2 aulas de carro</li>
+<li>✔ Já com 10% de desconto</li>
+</ul>
+<div class="preco">R$ 269,99</div>
+<a href="https://wa.me/558994004352?text=Olá!%20Quero%20informações%20sobre%20o%20Plano%20Basic%20(AB)%20da%20AMS." class="btn">Agendar pelo WhatsApp</a>
+</div>
+
+<div class="card">
+<span class="badge">Mais Escolhido</span>
+<h2>Plano Standard (AB)</h2>
+<ul class="lista">
+<li>✔ 4 aulas de moto</li>
+<li>✔ 4 aulas de carro</li>
+<li>✔ Já com 10% de desconto</li>
+</ul>
+<div class="preco">R$ 539,99</div>
+<a href="https://wa.me/558994004352?text=Olá!%20Quero%20informações%20sobre%20o%20Plano%20Standard%20(AB)%20da%20AMS." class="btn">Agendar pelo WhatsApp</a>
+</div>
+
+<div class="card">
+<h2>Plano Plus (AB)</h2>
+<ul class="lista">
+<li>✔ 10 aulas de moto</li>
+<li>✔ 10 aulas de carro</li>
+<li>✔ Já com 10% de desconto</li>
+</ul>
+<div class="preco">R$ 1.349,99</div>
+<a href="https://wa.me/558994004352?text=Olá!%20Quero%20informações%20sobre%20o%20Plano%20Plus%20(AB)%20da%20AMS." class="btn">Agendar pelo WhatsApp</a>
+</div>
+
+<div class="card">
+<h2>Plano Personalizado</h2>
+<ul class="lista">
+<li>✔ Monte a quantidade de aulas</li>
+<li>✔ Reforço em baliza ou percurso</li>
+<li>✔ Flexibilidade de horários</li>
+<li>✔ Orçamento sob medida</li>
+</ul>
+<div class="preco">Valor sob consulta</div>
+<p class="preco-info">Plano ajustado para sua necessidade</p>
+<a href="https://wa.me/558994004352?text=Olá!%20Quero%20montar%20um%20Plano%20Personalizado%20na%20AMS." class="btn">Solicitar Orçamento</a>
+</div>
+
+</div>
+
+<p class="obs">
+Precisa de um plano sob medida? Montamos a quantidade de aulas ideal para seu nível de experiência.
+</p>
+
+</div>
+
+</body>
+</html>

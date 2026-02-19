@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Endereço | Pro A.M.S Instrutor</title>
+
+<style>
+
+:root{
+--preto:#000000;
+--preto-sec:#1a1a1a;
+--laranja:#ff6600;
+--cinza:#cfcfcf;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:var(--preto);
+color:white;
+}
+
+/* HEADER */
+
+nav{
+background:var(--preto-sec);
+padding:15px;
+text-align:center;
+border-bottom:3px solid var(--laranja);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--laranja);
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:var(--laranja);
+}
+
+.logo-area img{
+height:50px;
+}
+
+/* HERO ESCURO */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+url("imagens/local2.jpg");
+background-size:cover;
+background-position:center;
+padding:10px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:30px;
+color:var(--laranja);
+margin-bottom:15px;
+}
+
+.hero p{
+color:var(--cinza);
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* BLOCO 2 COLUNAS */
+
+.grid-info{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:start;
+}
+
+.card{
+background:var(--preto-sec);
+padding:30px;
+border-radius:10px;
+}
+
+.card p{
+margin-bottom:10px;
+color:var(--cinza);
+}
+
+.botao{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:var(--laranja);
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+}
+
+.botao:hover{
+transform:scale(1.05);
+}
+
+/* MAPA */
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:10px;
+}
+
+/* GALERIA */
+
+.section-title{
+margin-bottom:30px;
+font-size:28px;
+color:var(--laranja);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.04);
+}
+
+/* VIDEO */
+
+.video-area{
+margin-top:35px;
+}
+
+video{
+width:30%;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--preto);
+text-align:center;
+padding:25px;
+margin-top:60px;
+border-top:3px solid var(--laranja);
+color:var(--cinza);
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:900px){
+
+.grid-info{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="topo">
+
+<a href="index.html">Início</a>
+<a href="faq.html">FAQ</a>
+<a href="planos.html">Planos</a>
+<a href="endereco.html">Endereço</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+<h1>📍 Nossa Localização</h1>
+<p>Estamos localizados em ponto estratégico, com fácil acesso e referência clara na região.</p>
+</section>
+
+<!-- INFORMAÇÕES + MAPA -->
+
+<div class="container">
+
+<div class="grid-info">
+
+<div class="card">
+<p><strong>Pro A.M.S Instrutor</strong></p>
+<p>Av. Manoel Bacelar, R. 04, Nº s/n</p>
+<p>Bairro São Francisco</p>
+<p>Uruçuí – PI</p>
+<p>CEP: 64860-000</p>
+
+<br>
+
+<p><strong>Ponto de Referência:</strong></p>
+<p>Próximo ao Bar do Triângulo e Chácara do Caruaru</p>
+<p>Loteamento – Rua Principal</p>
+
+<a class="botao"
+href="https://maps.app.goo.gl/pUMovLh3QTTv6N3p7?g_st=aw"
+target="_blank">
+Traçar Rota
+</a>
+
+</div>
+
+<div>
+<iframe 
+src="https://www.google.com/maps?q=Av.+Água+Branca+Uruçuí+PI&output=embed">
+</iframe>
+</div>
+
+</div>
+
+<!-- GALERIA -->
+
+<h2 class="section-title">📸 Fotos do Local</h2>
+
+<div class="gallery">
+<img src="c:\Users\Hellen\OneDrive\Imagens\WhatsApp Image 2026-02-18 at 10.52.51.jpeg" alt="Rua de acesso">
+<img src="c:\Users\Hellen\OneDrive\Imagens\WhatsApp Image 2026-02-18 at 12.17.38.jpeg" alt="Fachada A.M.S">
+<img src="c:\Users\Hellen\OneDrive\Imagens\WhatsApp Image 2026-02-18 at 10.52.50.jpeg" alt="Localização">
+</div>
+
+<!-- VIDEO -->
+
+<h2 class="section-title">🎥 Vídeo do Espaço</h2>
+
+<div class="video-area">
+<video controls>
+<source src="c:\Users\Hellen\Videos\WhatsApp Video 2026-02-18 at 12.19.28.mp4" type="video/mp4">
+</video>
+</div>
+
+</div>
+
+<footer>
+© 2026 Pro A.M.S Instrutor - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
